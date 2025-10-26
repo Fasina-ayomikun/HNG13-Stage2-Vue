@@ -1,35 +1,33 @@
-# 🧩 **HNG 13 – Stage 2: Multi-Framework Ticket Web App (Vue.js Implementation)**
+# **HNG 13 – Stage 2: Multi-Framework Ticket Web App (Vue.js Implementation)**
 
-This is the **Vue 3 version** of the Stage 2 challenge — part of the multi-framework ticket management system built in **React**, **Vue.js**, and **Twig**.
+This is the **Vue 3 version** of the Stage 2 challenge part of the multi-framework ticket management system built in **React**, **Vue.js**, and **Twig**.
 It expands the Stage 1 app into a **complete, authenticated ticket management platform** with CRUD functionality, form validation, and a consistent responsive design.
 
 ---
 
-## 🚀 **Live Demo**
+## **Live Demo**
 
-🔗 **Live Site:** [https://your-vue-deployment-link.vercel.app](https://your-vue-deployment-link.vercel.app)
-💻 **Repository:** [https://github.com/Fasina-ayomikun/HNG13-Vue-TicketApp](https://github.com/Fasina-ayomikun/HNG13-Vue-TicketApp)
-
-_(Update the live link once deployed)_
+**Live Site:** [https://your-vue-deployment-link.vercel.app](https://your-vue-deployment-link.vercel.app)
+**Repository:** [https://github.com/Fasina-ayomikun/HNG13-Stage2-Vue](https://github.com/Fasina-ayomikun/HNG13-Stage2-Vue)
 
 ---
 
-## ⚙️ **Setup & Run Instructions**
+## **Setup & Run Instructions**
 
-### 1️⃣ Clone the repo
+### Clone the repo
 
 ```bash
-git clone https://github.com/Fasina-ayomikun/HNG13-Vue-TicketApp.git
-cd HNG13-Vue-TicketApp
+git clone https://github.com/Fasina-ayomikun/HNG13-Stage2-Vue.git
+cd HNG13-Stage2-Vue
 ```
 
-### 2️⃣ Install dependencies
+### Install dependencies
 
 ```bash
 npm install
 ```
 
-### 3️⃣ Run locally
+### Run locally
 
 ```bash
 npm run dev
@@ -40,19 +38,20 @@ Then open the local URL shown in your terminal, e.g.
 
 ---
 
-## 🧱 **Project Structure**
+## **Project Structure**
 
 ```
 src/
 │
 ├── assets/                # Shared assets (SVGs, images, icons)
-├── components/            # Shared UI components (buttons, modals, nav, etc.)
+├── components/
+|── composables/         # Shared UI components (buttons, modals, nav, etc.)
 │
 ├── pages/
-│   ├── LandingPage.vue    # Landing page (hero, features, footer)
-│   ├── Auth/              # Login & Signup views
-│   ├── Dashboard.vue      # Summary dashboard
-│   └── Tickets.vue        # Full CRUD interface
+│   ├── landing-page    # Landing page (hero, features, footer)
+│   ├── auth              # Login & Signup views
+│   ├── dashboard      # Summary dashboard
+│   └── tickets        # Full CRUD interface
 │
 ├── utils/
 │   ├── useAuth.js         # Login/session composable (localStorage)
@@ -66,7 +65,7 @@ src/
 
 ---
 
-## 🧰 **Tech Stack & Tools**
+## **Tech Stack & Tools**
 
 | Category        | Tools Used                              |
 | --------------- | --------------------------------------- |
@@ -79,9 +78,9 @@ src/
 
 ---
 
-## 🖥️ **Core Features (Vue.js Version)**
+## **Core Features (Vue.js Version)**
 
-### 🏠 **Landing Page**
+### **Landing Page**
 
 - App name, hero section, and **“Login / Get Started”** CTAs
 - **Wavy SVG background** + decorative circles
@@ -90,7 +89,7 @@ src/
 
 ---
 
-### 🔐 **Authentication Pages**
+### **Authentication Pages**
 
 - Login & Signup forms with:
 
@@ -103,7 +102,7 @@ src/
 
 ---
 
-### 📊 **Dashboard**
+### **Dashboard**
 
 - Displays total, open, in-progress, and closed ticket counts
 - “Create Ticket”, “View Tickets”, and “Logout” buttons
@@ -112,7 +111,7 @@ src/
 
 ---
 
-### 🎟️ **Ticket Management (CRUD)**
+### **Ticket Management (CRUD)**
 
 - **Create, View, Edit, Delete** tickets
 - Validation rules:
@@ -134,7 +133,7 @@ src/
 
 ---
 
-## 🎨 **Design & Responsiveness**
+## **Design & Responsiveness**
 
 - Consistent **1440px max-width** layout
 - Flexbox + Grid-based responsive design
@@ -145,7 +144,7 @@ src/
 
 ---
 
-## ♿ **Accessibility Highlights**
+## **Accessibility Highlights**
 
 - Forms include properly linked `<label>` and `for` attributes
 - Errors referenced with `aria-describedby`
@@ -155,20 +154,18 @@ src/
 
 ---
 
-## 👥 **Example Test Credentials**
+## **Example Test Credentials**
 
 Use these for quick login:
 
 ```
-Email: demo@ticketflow.dev
+Email: demo@deetickets.dev
 Password: 123456
 ```
 
-_(Simulated credentials — stored in localStorage during login.)_
-
 ---
 
-## 🧩 **Vue Implementation Coverage**
+## **Vue Implementation Coverage**
 
 | Section        | Requirement                                        | Status |
 | -------------- | -------------------------------------------------- | ------ |
@@ -179,11 +176,3 @@ _(Simulated credentials — stored in localStorage during login.)_
 | Responsiveness | Mobile, Tablet, Desktop                            | ✅     |
 | Accessibility  | Semantic + Focus + ARIA                            | ✅     |
 | Documentation  | This README section                                | ✅     |
-
----
-
-## 🧾 **Next Steps**
-
-- [ ] Implement same layout in **Twig**
-- [ ] Create a **root README** linking React, Vue, and Twig versions
-- [ ] Deploy all three versions to showcase the multi-framework consistency
