@@ -7,7 +7,7 @@ It expands the Stage 1 app into a **complete, authenticated ticket management pl
 
 ## **Live Demo**
 
-**Live Site:** [https://your-vue-deployment-link.vercel.app](https://your-vue-deployment-link.vercel.app)
+**Live Site:** [https://hng-stage2-vue-deeyah.netlify.app](https://hng-stage2-vue-deeyah.netlify.app)
 **Repository:** [https://github.com/Fasina-ayomikun/HNG13-Stage2-Vue](https://github.com/Fasina-ayomikun/HNG13-Stage2-Vue)
 
 ---
