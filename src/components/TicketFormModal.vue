@@ -118,11 +118,8 @@ function handleSubmit() {
   clearErrors();
   Object.assign(errors, e);
   if (Object.keys(e).length) return;
-  // Emit a shallow copy so parent doesn't accidentally mutate our reactive object
   emit("submit", { ...values }, isEdit.value);
 }
 </script>
 
-<style scoped>
-/* Optional: reuse your existing CSS classes (.modal-backdrop, .modal, etc.) */
-</style>
+<style scoped></style>

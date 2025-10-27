@@ -123,8 +123,6 @@
 import { ref, computed } from "vue";
 import { useRouter, useRoute, RouterLink } from "vue-router";
 import { logout } from "../composables/useAuth.js";
-
-// Props
 const props = defineProps({
   brand: { type: String, default: "DeeTickets" },
   brand_url: { type: String, default: "/" },
@@ -146,17 +144,11 @@ const props = defineProps({
     ],
   },
 });
-
-// Local state & router
 const menuOpen = ref(false);
 const router = useRouter();
 const route = useRoute();
-
-// Derived
 const brandUrl = props.brand_url;
 const isTickets = computed(() => route.path.startsWith("/tickets"));
-
-// Methods
 function onLogout() {
   logout();
   router.replace("/auth/login");
@@ -170,6 +162,4 @@ function btnClass(color) {
 }
 </script>
 
-<style scoped>
-/* Optional: reuse your existing styles for .header, .nav, .brand, .actions, .btn, .btn-primary, .btn-ghost, .btn-danger, .menu-toggle, .menu-bar, .sidebar, .sidebar-backdrop, .close-btn, etc. */
-</style>
+<style scoped></style>

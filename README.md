@@ -34,7 +34,7 @@ npm run dev
 ```
 
 Then open the local URL shown in your terminal, e.g.
-👉 **[http://localhost:5173](http://localhost:5173)**
+ **[http://localhost:5173](http://localhost:5173)**
 
 ---
 

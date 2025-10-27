@@ -1,9 +1,6 @@
 <template>
-  <section
-    class="lp-secondary container"
-    aria-labelledby="secondary-features-title"
-  >
-    <div class="max-width">
+  <section class="lp-secondary" aria-labelledby="secondary-features-title">
+    <div class="container">
       <h2 id="secondary-features-title" class="heading">
         Do more with DeeTickets
       </h2>
@@ -98,10 +95,6 @@
   </section>
 </template>
 
-<script setup>
-// No props or state required for this static section.
-</script>
+<script setup></script>
 
-<style scoped>
-/* Optional: keep parity with your React styles */
-</style>
+<style scoped></style>

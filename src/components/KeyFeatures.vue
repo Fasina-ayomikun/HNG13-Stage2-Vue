@@ -50,10 +50,6 @@
   </section>
 </template>
 
-<script setup>
-// No script logic needed   static presentation component
-</script>
+<script setup></script>
 
-<style scoped>
-/* Optional: reuse or import your existing CSS */
-</style>
+<style scoped></style>

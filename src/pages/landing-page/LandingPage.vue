@@ -89,34 +89,37 @@
 
       <!-- HOW IT WORKS -->
       <section id="how" class="lp-how container" aria-labelledby="how-title">
-        <h2 id="how-title" class="heading">How it works</h2>
-        <p class="desc">
-          Getting started with DeeTickets is as easy as 1-2-3. Create your first
-          ticket and experience seamless management from start to finish.
-        </p>
-        <ol class="how-grid">
-          <li class="how-step" aria-label="Step 1: Create">
-            <span class="step-badge" aria-hidden="true">1</span>
-            <h3 class="how-title">Create</h3>
-            <p class="how-desc">
-              Open a ticket with a clear title, status, and details.
-            </p>
-          </li>
-          <li class="how-step" aria-label="Step 2: Assign">
-            <span class="step-badge" aria-hidden="true">2</span>
-            <h3 class="how-title">Assign</h3>
-            <p class="how-desc">
-              Set owners and priorities to move work forward.
-            </p>
-          </li>
-          <li class="how-step" aria-label="Step 3: Resolve">
-            <span class="step-badge" aria-hidden="true">3</span>
-            <h3 class="how-title">Resolve</h3>
-            <p class="how-desc">
-              Close with context and notify stakeholders automatically.
-            </p>
-          </li>
-        </ol>
+        <div class="container">
+          <h2 id="how-title" class="heading">How it works</h2>
+          <p class="desc">
+            Getting started with DeeTickets is as easy as 1-2-3. Create your
+            first ticket and experience seamless management from start to
+            finish.
+          </p>
+          <ol class="how-grid">
+            <li class="how-step" aria-label="Step 1: Create">
+              <span class="step-badge" aria-hidden="true">1</span>
+              <h3 class="how-title">Create</h3>
+              <p class="how-desc">
+                Open a ticket with a clear title, status, and details.
+              </p>
+            </li>
+            <li class="how-step" aria-label="Step 2: Assign">
+              <span class="step-badge" aria-hidden="true">2</span>
+              <h3 class="how-title">Assign</h3>
+              <p class="how-desc">
+                Set owners and priorities to move work forward.
+              </p>
+            </li>
+            <li class="how-step" aria-label="Step 3: Resolve">
+              <span class="step-badge" aria-hidden="true">3</span>
+              <h3 class="how-title">Resolve</h3>
+              <p class="how-desc">
+                Close with context and notify stakeholders automatically.
+              </p>
+            </li>
+          </ol>
+        </div>
       </section>
     </main>
 

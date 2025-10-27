@@ -4,8 +4,7 @@ import Login from "../pages/auth/Login.vue";
 import Signup from "../pages/auth/Signup.vue";
 import Dashboard from "../pages/dashboard/Dashboard.vue";
 import Tickets from "../pages/tickets/Tickets.vue";
-import { isAuthed } from "../composables/useAuth"; // equivalent of your utils/auth.js
-
+import { isAuthed } from "../composables/useAuth";
 const routes = [
   { path: "/", name: "landing", component: LandingPage },
   { path: "/auth/login", name: "login", component: Login },
@@ -28,15 +27,13 @@ const routes = [
     component: Tickets,
     meta: { requiresAuth: true },
   },
-  { path: "/:pathMatch(.*)*", redirect: "/" }, // catch-all route
+  { path: "/:pathMatch(.*)*", redirect: "/" },
 ];
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
-
-// Global navigation guard (PrivateRoute equivalent)
 router.beforeEach((to) => {
   const authed = isAuthed();
   if (to.meta.requiresAuth && !authed) {

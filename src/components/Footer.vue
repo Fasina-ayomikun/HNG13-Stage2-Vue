@@ -103,6 +103,4 @@ import { RouterLink } from "vue-router";
 const year = computed(() => new Date().getFullYear());
 </script>
 
-<style scoped>
-/* Optional: carry over your existing footer styles */
-</style>
+<style scoped></style>

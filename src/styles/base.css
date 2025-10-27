@@ -15,7 +15,6 @@ body {
     background: var(--bg);
 }
 
-/* Generic focus (for mouse + keyboard) */
 button:focus {
     outline: 1px solid var(--cta);
     outline-offset: 1px;
@@ -26,7 +25,6 @@ a:focus {
     color: var(--cta);
 }
 
-/* Keyboard-only focus (Tab key users) */
 button:focus-visible {
     outline: 1px solid var(--cta);
     outline-offset: 3px;
@@ -311,6 +309,18 @@ a:focus:not(:focus-visible) {
 
     .db-actions {
         display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+
+    .db-actions {
+        display: none;
+    }
+
+    .header:has(+ .auth-wrap) .menu-toggle {
+        display: none !important;
     }
 }
 

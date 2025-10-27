@@ -122,17 +122,15 @@ import Footer from "../../components/Footer.vue";
 import FilterChip from "../../components/FilterChip.vue";
 import TicketFormModal from "../../components/TicketFormModal.vue";
 
-/* Router */
 const router = useRouter();
 const route = useRoute();
 
-/* State */
 const items = ref([]);
 const query = ref(
   typeof route.query.query === "string"
-    ? route.query.query // supports ?query=...
+    ? route.query.query
     : typeof route.query.q === "string"
-    ? route.query.q // or ?q=...
+    ? route.query.q
     : ""
 );
 const filter = ref(
@@ -142,12 +140,10 @@ const editing = ref(null);
 const showForm = ref(false);
 const toast = ref("");
 
-/* Load tickets */
 onMounted(() => {
   items.value = getTickets();
 });
 
-/* Derived */
 const counts = computed(() => statusCounts(items.value));
 
 const filtered = computed(() => {
@@ -159,7 +155,6 @@ const filtered = computed(() => {
   });
 });
 
-/* Sync query params (?filter=&q=) */
 watch([filter, query], ([f, q]) => {
   const next = {};
   if (f !== "all") next.filter = f;
@@ -167,7 +162,6 @@ watch([filter, query], ([f, q]) => {
   router.replace({ query: next });
 });
 
-/* Open modal for /tickets/new */
 const isCreateTicket = computed(() => route.path.endsWith("/new"));
 watch(
   () => isCreateTicket.value,
@@ -177,11 +171,7 @@ watch(
   { immediate: true }
 );
 
-/* Actions */
 function openCreate() {
-  console.log("====================================");
-  console.log("opened");
-  console.log("====================================");
   editing.value = null;
   showForm.value = true;
 }
@@ -225,7 +215,6 @@ function ding(msg) {
   setTimeout(() => (toast.value = ""), 2000);
 }
 
-/* Helpers */
 function labelStatus(s) {
   if (s === "in_progress") return "In Progress";
   return s[0].toUpperCase() + s.slice(1);
